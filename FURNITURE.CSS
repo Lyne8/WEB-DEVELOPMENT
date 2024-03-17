@@ -1,0 +1,40 @@
+universal looks */
+*{margin : 0;
+ padding: 0;
+box-sizing: border-box;
+  }
+  body{background-image:url("kids store/BED\ 3.webp");
+
+  background-repeat:repeat;
+  
+width:100%;
+height:100%;
+
+  }
+  
+
+  
+
+/* styling OF ABOUT US*/
+header {
+
+    color:orangered;
+    font-size: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:center;
+    padding: 20px,20px,0,0;
+    text-decoration:solid;
+}
+p{
+color:blue;
+font-size: 35px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+ul{
+    color:blue;
+    font-size:30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+
+
+}

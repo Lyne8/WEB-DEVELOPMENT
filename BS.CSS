@@ -1,0 +1,121 @@
+/* universal looks */
+*{margin : 0;
+ padding: 0;
+box-sizing: border-box;
+  }
+  body{background-color: antiquewhite;}
+  header{
+overflow: hidden;
+background-color: white;
+line-height: 5px;
+
+}
+  
+  /* logo  */
+header img{
+    margin-top: -2.rem;  /* push logo to position up */
+    width: 7vw;
+    height:5rem;
+}
+/* styling of the viclyn babies store */
+header span{
+
+    color:orangered;
+    font-size: 70px;
+    font-family:'Algerian';
+    text-align: center;
+    padding: 17px;
+    text-decoration: none;
+}
+/* logo  */
+header img{
+    margin-top: -2.rem;  /* push logo to position up */
+    width: 5vw;
+    height:4rem;
+    font-size: 5px;
+}
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+header {
+      float: none;
+      display: flex;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+  nav{
+    background-color:skyblue;
+    height: 4rem;
+    padding-top: 0.5rem;  
+    overflow: visible; 
+    z-index: 2;
+
+    
+}
+
+nav ul{
+  font-weight: 900;
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    justify-content: right;
+    margin: 1rem 2rem 0 0; 
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: black;
+}
+.products_dropdown {
+  display: table-row;
+  visibility: hidden;
+  position: absolute; /* Ensure absolute positioning for z-index to work */
+  z-index: 3; /* Set a higher z-index */
+}
+.products_dropdown li a{ background-color: #16e616; font-weight: 500; font-size: medium;}
+
+#products:hover .products_dropdown{
+  visibility: visible;
+  color: red;
+}
+#products .products_dropdown li a:hover{color: red;}
+
+
+.funiture_dropdown {
+  display: table-row;
+  visibility: hidden;
+  position: absolute; /* Ensure absolute positioning for z-index to work */
+  z-index: 3; /* Set a higher z-index */
+}
+.funiture_dropdown li a{ background-color:rgb(19, 245, 19); font-weight: 500; font-size: medium;}
+
+#funiture:hover .funiture_dropdown{
+  visibility: visible;
+  color: red;
+}
+#funiture .funiture_dropdown li a:hover{color: red;}
+ image{background-image:url("kids store/SLIDE\ 1.jpeg");}
+
+
+/* style of sliders */
+ .slider-frame .slider-images img{
+  width:100%;
+  height:50%;
+
+ }
+
+ footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
