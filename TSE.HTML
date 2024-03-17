@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="TSE.CSS">
+</head>
+
+<body bgcolor="white">
+    
+    <!-- header -->
+    <header>
+        <!-- image as logo -->
+        <img src="CARS.jpeg" alt="">
+      <span> TOPSTAR  EVENTS </span>    
+     </header>
+    
+    <!-- navigationbar-->
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT-US</a></li>
+            <li><a href="#">CONTACT</a></li>
+
+        
+            <li id="products"><a href="#">PRODUCTS  </a>
+                        <ul class="products_dropdown">
+                            <li><a href="#">WEDDING CAKES</a></li>
+                            <li><a href="#">BRIDAL GOWNS</a></li>
+                            <li><a href="#">TENTS</a></li>
+                            <li><a href="#">SEATS</a></li>
+                            <li><a href="#">BIRTHDAY CAKES</a></li>
+                            <li><a href="#">FLOWERS </a></li>
+                    
+                        </ul>
+            </li>
+            <li id="funiture"><a href="#">SERVICES</a>
+                <ul class="funiture_dropdown">
+                    <li><a href="#"> WEDDING DECORATIONS</a></li>
+                    <li><a href="#"> BIRTHDAY PARTY ORGANISATION</a></li>
+                    <li><a href="#"> INTRODUCTION AND ENGAMENT PARTIES</a></li>
+                </ul>
+            </li>
+            
+
+            <li id="BOOKING AND DELIVERIES"><a href="#"></a>
+            </li>
+        </ul>
+    </nav> 
+
+
+
+            <!-- the slider start -->
+        <center></div>
+
+        
+         <div class="slider-images">
+         <div class="slides">
+         <img src="D1.jpeg" alt="">
+         </div>
+         
+         <div class="slides">
+             <img src="D2.jpeg" alt="">
+             </div>
+         
+             <div class="slides">
+                 <img src="D3" alt="">
+             </div>
+             <div class="slides">
+                <img src="CAKE.jpeg" alt="">
+            </div>
+
+            <div class="slides">
+                <img src="D7.jpeg" alt="">
+            </div>
+            <div class="slides">
+                <img src="BASKETS.jpeg" alt="">
+            </div> 
+            
+         </div>
+         
+          </div>
+        </center>
+     <script>
+         let slidesIndex = 0;
+     showSlides();
+         function showSlides() {
+     let i;
+     let slides = document.getElementsByClassName("slides");
+     for (i = 0; i<slides.length; i++) {
+         slides[i].style.display = "none";
+     }
+     slidesIndex++;
+     if (slidesIndex > slides.length) { slidesIndex = 1}
+     
+     slides[slidesIndex-1].style.display = "block";
+     setTimeout(showSlides, 2000);
+         }
+         </script>
+
+<!-- the slider end -->
+
+<footer>
+    <p>TOP-STAR EVENTS YOUR ASSURED MEMORABLE AND GORGEOUS  EVENTS ORGANISERS AROUND..  </p>
+    
+
+</footer>
+
+
+
+</body>
+
+
+</html>
